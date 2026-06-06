@@ -1,0 +1,564 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --heading-font: "Martian Mono", sans-serif;
+  --text-font: "Inter", sans-serif;
+}
+
+/* Fonts */
+
+h1,
+h2,
+h3,
+button,
+.stars__and__testimonials p,
+.selection p,
+.testimonial p {
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.hero__text h1 {
+  background-image: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer--bottom {
+  font-family: var(--heading-font);
+  font-size: 0.7rem;
+}
+
+.stars__and__testimonials p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-top: 0.5em;
+  padding: 0;
+}
+
+.hero--paragraph,
+.club__text p,
+.mem ul li {
+  font-family: var(--text-font);
+}
+
+.testimonial .reg {
+  font-family: var(--text-font);
+  font-weight: 400;
+}
+
+.together__text ul li {
+  font-family: var(--text-font);
+  line-height: 120%;
+}
+
+.price {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.membership--container span {
+  font-family: var(--text-font);
+  font-size: 0.9rem;
+  font-weight: lighter;
+  position: relative;
+  right: 12px;
+}
+
+/* Main CSS */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero--image {
+  padding-top: 24px;
+}
+
+section.hero {
+  background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  padding-bottom: 80px;
+}
+
+.hero__text h1 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.hero--paragraph {
+  margin-bottom: 32px;
+}
+
+.hero__text button {
+  width: 100%;
+  background-color: #fff5ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 1em 1.1em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.below__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 64px;
+}
+
+.avatars {
+  flex-shrink: 0;
+}
+
+.avatars img {
+  width: 110px;
+  height: 40px;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 24px;
+  height: 20px;
+  margin-right: -5px;
+}
+
+.hero--image--mobile {
+  border-radius: 8px;
+}
+
+.hero--image--desktop {
+  display: none;
+  border-radius: 8px;
+}
+
+section.together {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.together__text ul {
+  margin-top: 24px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+.together__text ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.together--img--mobile {
+  border-radius: 8px;
+}
+
+.together--img--desktop {
+  border-radius: 8px;
+  display: none;
+}
+
+section.club {
+  margin-bottom: 64px;
+}
+
+.club--img--desktop {
+  display: none;
+}
+
+.tech--logos {
+  display: none;
+}
+
+.club--img--mobile {
+  border-radius: 8px;
+}
+
+.word--circle {
+  position: relative;
+  display: inline-block;
+}
+
+.circle--img {
+  width: 110px;
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.club__text p {
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+section.journey {
+  background: #e6e1df;
+  padding: 64px 0px;
+  border-radius: 8px;
+}
+
+.journey__text h1 {
+  margin-bottom: 32px;
+}
+
+.arrow--img {
+  display: none;
+}
+
+.journey__selection__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.selection p {
+  margin-top: 12px;
+  padding: 0;
+}
+
+section.membership__options {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.membership--container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.starter {
+  border: 0.5px solid lightgray;
+  border-radius: 8px;
+}
+
+.pro {
+  background: #e6e1df;
+  border-radius: 8px;
+}
+
+.mem h1,
+h3,
+p,
+ul {
+  margin-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+hr {
+  width: 80%;
+  margin: 24px auto;
+}
+
+.mem ul {
+  list-style-type: none;
+}
+
+.mem ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.mem ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+.mem button {
+  margin: 24px auto;
+  width: 90%;
+  background-color: #fff5ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 1em 1.1em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+section.testimonial {
+  margin-bottom: 64px;
+}
+
+footer.debug {
+  background-color: #062630;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
+.debug h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.debug button {
+  margin: 24px auto;
+  width: 100%;
+  background-color: inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 1em 1.1em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border: 2px solid white;
+  font-weight: 450;
+}
+
+.footer--bottom p {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.footer--icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Hover States */
+
+button:hover {
+  background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .container {
+    width: 85%;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .hero--paragraph,
+  .together__text ul,
+  .club__text p,
+  .testimonial p {
+    padding: 0;
+  }
+
+  button {
+    max-width: 380px;
+  }
+
+  .below__button {
+    justify-content: start;
+  }
+
+  .hero--image--mobile {
+    display: none;
+  }
+
+  .hero--image--desktop {
+    display: inline-block;
+  }
+
+  .together--img--mobile {
+    display: none;
+  }
+
+  .together--img--desktop {
+    display: inline;
+  }
+
+  .club--img--mobile {
+    display: none;
+  }
+
+  .club--img--desktop {
+    display: inline;
+    border-radius: 8px;
+  }
+
+  .club__image {
+    position: relative;
+  }
+
+  .tech--logos {
+    display: inline;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .membership--container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .starter,
+  .pro,
+  .enterprise {
+    flex-grow: 1;
+  }
+
+  .testimonial {
+    max-width: 970px;
+  }
+
+  .testimonial p {
+    font-size: 1.3rem;
+  }
+
+  .debug h1 {
+    font-size: 2rem;
+  }
+
+  .footer--bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .below__button__footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footer--line {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero__flex__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    gap: 1.3em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .together__flex__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    gap: 5em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .club__flex__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    gap: 5em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tech--logos {
+    display: inline;
+    position: absolute;
+    right: 90%;
+    bottom: 50px;
+  }
+
+  section.journey {
+    max-width: 1200px;
+  }
+
+  .journey__selection__container {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .journey__text h1 {
+    text-align: center;
+  }
+
+  .arrow--img {
+    display: inline;
+  }
+
+  .check--img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .membership__text h1 {
+    text-align: center;
+  }
+
+  .membership--container {
+    max-width: 970px;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .testimonial .stars {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial p {
+    text-align: center;
+  }
+
+  .enterprise h1 {
+    text-align: left;
+  }
+}
