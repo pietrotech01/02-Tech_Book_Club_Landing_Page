@@ -74,6 +74,10 @@ button,
   right: 12px;
 }
 
+.enterprise h1 {
+  font-size: 1.6rem;
+}
+
 /* Main CSS */
 
 .container {
@@ -257,6 +261,11 @@ section.membership__options {
 
 .pro {
   background: #e6e1df;
+  border-radius: 8px;
+}
+
+.enterprise {
+  border: 0.5px solid lightgray;
   border-radius: 8px;
 }
 
